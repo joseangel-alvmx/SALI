@@ -1,0 +1,20 @@
+version: '1.0'
+services:
+  app:
+    image: bank-app:0.1
+    container_name: bank-app
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./app:/app
+  db:
+    image: mysql:5.7
+    container_name: bank-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bank
+      MYSQL_USER: bank
+      MYSQL_PASSWORD: bank
+    ports:
+      - "3306:3306"
