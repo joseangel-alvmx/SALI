@@ -1,0 +1,8 @@
+Options All -Indexes
+php_value date.timezone 'America/Bogota'
+php_value max_execution_time -1
+# Si quieres, agrega más extensiones entre los paréntesis, separadas por |
+<Files ~ "\.(env|json|config.js|md|gitignore|gitattributes|lock)$">
+    Order allow,deny
+    Deny from all
+</Files>
