@@ -18,7 +18,7 @@ class UsersTableSeeder extends Seeder
             [
                 'created_at' => now(),
                 'updated_at' => now(),
-                'nombre' => 'admin',
+                'usuario' => 'admin',
                 'nombre_usuario' => 'admin@admin.com',
                 'clave' => Hash::make('1234567890'),
                 'rol' => 'admin',

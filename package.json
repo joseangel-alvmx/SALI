@@ -7,7 +7,7 @@
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.8",
-        "@tabler/core": "1.0.0-beta20",
+        "@tabler/core": "^1.0.0-beta21",
         "@tabler/icons": "^2.32.0",
         "@tabler/icons-webfont": "^2.32.0",
         "apexcharts": "^3.40.0",
@@ -36,7 +36,7 @@
         "sass": "~1.64.2",
         "sass-loader": "^13.3.1",
         "tabulator-tables": "^5.5.2",
-        "tinymce": "^6.4.2",
+        "tinymce": "^7.6.0",
         "tom-select": "^2.2.2",
         "vite": "^4.0.0",
         "xlsx": "^0.18.5"

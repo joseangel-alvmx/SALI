@@ -15,6 +15,7 @@ return new class extends Migration
             $table->string('banco',5)->primary();
             $table->timestamps();
             $table->string('nombre_banco',20);
+            $table->integer('clave_ref');
         });
     }
 
