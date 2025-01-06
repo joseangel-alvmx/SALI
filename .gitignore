@@ -18,3 +18,8 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+dockerfile
+docker-compose.yml
+subida.py
+
+

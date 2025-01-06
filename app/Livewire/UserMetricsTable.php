@@ -18,6 +18,7 @@ class UserMetricsTable extends Component
                (SELECT COUNT(id) FROM lineas l WHERE l.agente_asignado = u.usuario AND l.estado = 'apl') AS Aplicado,
                (SELECT COUNT(id) FROM lineas l WHERE l.agente_asignado = u.usuario AND l.estado = 'cnl') AS Cancelado
         FROM users u 
+        WHERE u.rol in ('agente','super') 
         ORDER BY Asignado DESC, Aplicado DESC, Cancelado DESC LIMIT 9");
         return view('livewire.user-metrics-table');
     }
